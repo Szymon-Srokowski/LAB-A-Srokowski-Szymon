@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista To-Do</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista To-Do</h1>
+        <input type="text" id="search" placeholder="Szukaj zadań...">
+        <ul id="taskList">
+            <li class="task-item">
+                <span>Zrobić zakupy (Termin: 2024-11-10 15:00)</span>
+                <button class="delete">🗑️</button>
+            </li>
+            <li class="task-item">
+                <span>Przygotować prezentację (Termin: 2024-11-15 09:00)</span>
+                <button class="delete">🗑️</button>
+            </li>
+            <li class="task-item">
+                <span>Spotkanie z zespołem (Termin: 2024-11-20 13:30)</span>
+                <button class="delete">🗑️</button>
+            </li>
+        </ul>
+        <div class="task-input">
+            <input type="text" id="newTask" placeholder="Dodaj nowe zadanie...">
+            <input type="datetime-local" id="taskDeadline">
+            <button id="addTaskButton">Dodaj</button>
+        </div>
+    </div>
+    
+    <script src="java.js"></script>
+</body>
+</html>
